@@ -1,0 +1,10 @@
+.mainBox {
+  background-color: #03061c;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
