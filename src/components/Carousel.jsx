@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TemplateCard from "./TemplateCard.JSX";
+import TemplateCard from "./TemplateCard.jsx";
 
 const FAN_ANGLES = [-12, -6, 0, 6, 12]; // For up to 5 cards
 const FAN_OFFSETS = [-32, -16, 0, 16, 32];
