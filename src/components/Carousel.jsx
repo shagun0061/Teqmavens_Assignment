@@ -1,26 +1,27 @@
 import React, { useState } from "react";
-import { TemplateCard } from "./TemplateCard.jsx";
+import TempCard from "./TempCard";
 
 const FAN_ANGLES = [-12, -6, 0, 6, 12]; // For up to 5 cards
 const FAN_OFFSETS = [-32, -16, 0, 16, 32];
 
 const Carousel = ({ stacked = false }) => {
   const [current, setCurrent] = useState(0);
-  const prev = () => setCurrent((c) => (c === 0 ? cards.length - 1 : c - 1));
-  const next = () => setCurrent((c) => (c === cards.length - 1 ? 0 : c + 1));
 
   const cards = [
-    <TemplateCard
+    <TempCard
       key={0}
       title="Your AI Prompt "
       subtitle="Use pre-made templates to jumpstart creativity."
     />,
-    <TemplateCard
+    <TempCard
       key={1}
       title="Another Template"
       subtitle="Another description here."
     />,
   ];
+
+  const prev = () => setCurrent((c) => (c === 0 ? cards.length - 1 : c - 1));
+  const next = () => setCurrent((c) => (c === cards.length - 1 ? 0 : c + 1));
 
   if (stacked) {
     return (

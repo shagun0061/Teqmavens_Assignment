@@ -1,7 +1,6 @@
-import React from "react";
 import { GiftButton } from "../assets/imageExport";
 
-export const TemplateCard = ({ icon, title, subtitle }) => {
+const TempCard = ({ icon, title, subtitle }) => {
   return (
     <div className="relative w-[380px] h-[300px] rounded-2xl bg-gradient-to-br from-[#7B5FFF] to-[#5737D6] shadow-xl flex flex-col p-6">
       {/* Icon in circle */}
@@ -26,3 +25,5 @@ export const TemplateCard = ({ icon, title, subtitle }) => {
     </div>
   );
 };
+
+export default TempCard;
