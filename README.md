@@ -23,7 +23,7 @@ Assignment create with [Vite](https://vitejs.dev/), [Tailwind CSS v4](https://ta
 
 ## 🚀 Deployed URL
 
-https://teqmavens-assignment-git-main-shagun0061s-projects.vercel.app?_vercel_share=XzXqoR5xJv6854SGFXZGQhq1LvBiCSN9
+https://teqmavens-assignment.vercel.app/
 
 ## 🚀 Getting Started
 
