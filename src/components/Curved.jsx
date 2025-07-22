@@ -7,6 +7,7 @@ import {
   AiJourneyButton,
   BranchingTileButton,
   TemplateAiBg,
+  branchButton,
 } from "../assets/imageExport";
 import "./curved.css";
 import GradientCardWrapper from "./GradientCardWrapper";
@@ -14,16 +15,66 @@ import GradientCardWrapper from "./GradientCardWrapper";
 const Curved = () => {
   return (
     <div className=" rounded text-center flex flex-col items-center justify-between gap-10 relative">
-      <div className="bg-gradient-to-b from-blue-400 to-blue-700 border-2 min-h-[350px] w-full flex flex-col items-center justify-between rounded-2xl">
-        upper
+      <div className="bg-gradient-to-b from-[#1cc7e8] via-[#31a2ea] to-[#7789f6] border-2 min-h-[350px] w-full flex flex-col items-center justify-between rounded-2xl">
+        <div className="relative z-10 pt-8 flex flex-col items-center">
+          <span className="text-6xl font-semibold text-white mb-4">
+            Template AI
+          </span>
+          <div className="w-20 h-20 bg-white rounded-md"></div>
+        </div>
       </div>
-      <div className="bg-[#0E0E1A] rounded-[100%] z-99  w-80 h-80 absolute top-[25%] left-1/2 transform -translate-x-1/2" />
-      <div className=" min-h-[350px] w-full flex gap-20 items-center justify-between">
+      <div className="bg-[#0E0E1A] rounded-[100%] z-9  w-70 h-70 absolute top-[30%] left-1/2 transform -translate-x-1/2" />
+      <div className=" min-h-[350px] w-full flex gap-15 items-center justify-between">
         <GradientCardWrapper className="h-full w-full flex flex-col items-center justify-between rounded-2xl">
-          one
+          <img
+            src={BranchingTileLine}
+            alt="Branching Tile Line"
+            className="absolute top-2 -left-6 z-10 w-36 h-44"
+          />
+          <div className="relative z-20 p-2 flex flex-col items-start justify-end h-full pb-0 text-left">
+            <h4 className="font-semibold text-lg mb-1">Branching paths</h4>
+            <p className="text-xs text-[#ACA0E4]">
+              Explore multiple prompt directions with branching.
+            </p>
+          </div>
+          <div className="absolute bottom-24 left-0 right-0 z-20 flex items-center ">
+            <div className="w-11 h-2 flex items-center justify-center  -mr-3 bg-black"></div>
+            <div className="w-13 h-13 flex items-center justify-center rounded-full  bg-black p-1">
+              <img
+                src={branchButton}
+                alt="Branching Paths Button"
+              />
+            </div>
+          </div>
+
+
+          
+
         </GradientCardWrapper>
-        <GradientCardWrapper className="h-full w-full flex flex-col items-center justify-between rounded-2xl">
-          one
+        <GradientCardWrapper className="h-full w-full flex flex-col items-center justify-between rounded-2xl text-left">
+          <img
+            src={AiJourneyLine}
+            alt="AI Journey Line"
+            className="absolute top-0 -right-2 z-10 w-36 h-44"
+          />
+          <div className="relative z-20 p-2 flex flex-col items-start justify-end h-full pb-0">
+            <h4 className="font-semibold text-lg mb-1">Ai journey</h4>
+            <p className="text-xs text-[#ACA0E4]">
+              Boost your prompt precision with keywords.
+            </p>
+          </div>
+
+          <div className="absolute bottom-24 left-0 right-0 z-20 flex items-center ">
+            <div className="w-11 h-2 flex items-center justify-center  -mr-3 bg-black"></div>
+            <div className="w-13 h-13 flex items-center justify-center rounded-full  bg-black p-1">
+              <img
+                src={AiJourneyButton}
+                alt="Branching Paths Button"
+              />
+            </div>
+          </div>
+
+          
         </GradientCardWrapper>
       </div>
     </div>

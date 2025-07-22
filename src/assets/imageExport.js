@@ -19,6 +19,7 @@ import GredCard from "./Frame 1321317403.png";
 import Avatar from "./circle.png";
 import Avatar1 from "./circle (1).png";
 import Avatar2 from "./circle (2).png";
+import branchButton  from "./branchButton.svg"
 
 export {
   Logo,
@@ -42,4 +43,5 @@ export {
   Avatar1,
   Avatar2,
   Avatar,
+  branchButton
 };
