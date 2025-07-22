@@ -8,18 +8,18 @@ import {
 } from "../assets/imageExport";
 
 const RightPanel = () => (
-  <div className="rounded text-center flex flex-col items-center justify-between gap-10">
+  <div className="rounded text-center flex flex-col items-center justify-between gap-10 w-full">
     <div className="min-h-[350px] flex flex-col items-center justify-between">
-      <GradientCardWrapper
-        className={"h-[120px] w-64 flex items-center justify-center"}
-      >
+      <GradientCardWrapper className="h-[120px] w-full sm:w-64 flex items-center justify-center">
         <SparkleToggle />
       </GradientCardWrapper>
 
       {/* Stats */}
       <div className="relative flex flex-col items-center justify-center text-white font-bold">
         {/* Top number */}
-        <span className="text-[60px] text-purple-400 leading-none">25</span>
+        <span className="text-4xl sm:text-[60px] text-purple-400 leading-none">
+          25
+        </span>
 
         {/* Overlay label with brackets */}
         <div className="relative my-1">
@@ -34,28 +34,30 @@ const RightPanel = () => (
           </div>
 
           {/* Label */}
-          <span className="text-lg text-purple-300 bg-[#1f1f2e] font-normal  rounded-md tracking-wide">
+          <span className="text-sm sm:text-lg text-purple-300 bg-[#1f1f2e] font-normal rounded-md tracking-wide">
             created prompts
           </span>
         </div>
 
         {/* Bottom letter (M) */}
-        <span className="text-[60px] text-purple-500 leading-none">M</span>
+        <span className="text-4xl sm:text-[60px] text-purple-500 leading-none">
+          M
+        </span>
       </div>
     </div>
 
     <div className="min-h-[350px]">
-      <div className="bg-[#1B1B2D] text-white rounded-3xl p-6 w-64 shadow-lg relative overflow-hidden flex flex-col justify-between h-full">
+      <div className="bg-[#1B1B2D] text-white rounded-3xl p-6 w-full sm:w-64 shadow-lg relative overflow-hidden flex flex-col justify-between h-full">
         {/* Title and Description */}
         <div className="text-left">
-          <h2 className="text-lg font-bold">Prompt Service</h2>
-          <p className="text-lg text-[#ACA0E4] font-normal">
+          <h2 className="text-lg sm:text-xl font-bold">Prompt Service</h2>
+          <p className="text-lg sm:text-xl text-[#ACA0E4] font-normal">
             Use pre-made templates to jumpstart creativity.
           </p>
         </div>
 
         {/* Bottom Icon Pills */}
-        <div className=" relative h-[180px] flex justify-end ">
+        <div className="relative h-[180px] flex justify-end ">
           {/* Rewrite Pill */}
           <div className="flex items-center gap-2 bg-[#2A2A40] text-sm px-6 py-3 rounded-full shadow-sm absolute top-10 -left-2 -rotate-50">
             <span className="w-2 h-2 bg-purple-300 rounded-full"></span>
@@ -63,12 +65,12 @@ const RightPanel = () => (
           </div>
 
           {/* Gift */}
-          <div className="w-18 h-12 bg-gradient-to-tr  rounded-full flex items-center justify-center shadow-md absolute top-[30%] right-12">
+          <div className="w-16 sm:w-18 h-12 bg-gradient-to-tr rounded-full flex items-center justify-center shadow-md absolute top-[30%] right-12">
             <img src={GiftButton} alt="" />
           </div>
 
           {/* Camera Pill */}
-          <div className="w-18 h-14 bg-gradient-to-br rounded-full flex items-center justify-center shadow-md absolute left-0 bottom-0">
+          <div className="w-16 sm:w-18 h-14 bg-gradient-to-br rounded-full flex items-center justify-center shadow-md absolute left-0 bottom-0">
             <img src={CamraButton} alt="" />
           </div>
 

@@ -17,7 +17,7 @@ function App() {
     setIsModalOpen(false);
   }
   return (
-    <div className="grid grid-cols-[30%_40%_30%] p-29 pt-5">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[30%_40%_30%] p-2 md:p-4 lg:p-5 pt-3">
       <LeftPanel setIsModalOpen={setIsModalOpen} setModalType={setModalType} />
       {/* <CurvedLayout setIsModalOpen={setIsModalOpen} /> */}
       <Curved setIsModalOpen={setIsModalOpen} />
