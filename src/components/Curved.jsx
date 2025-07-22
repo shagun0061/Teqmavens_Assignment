@@ -1,12 +1,8 @@
 import {
   Sphere,
-  BranchingTileBg,
   BranchingTileLine,
-  AiJourneyBg,
   AiJourneyLine,
   AiJourneyButton,
-  BranchingTileButton,
-  TemplateAiBg,
   branchButton,
 } from "../assets/imageExport";
 import "./curved.css";
@@ -23,7 +19,15 @@ const Curved = () => {
           <div className="w-20 h-20 bg-white rounded-md"></div>
         </div>
       </div>
-      <div className="bg-[#0E0E1A] rounded-[100%] z-9  w-70 h-70 absolute top-[30%] left-1/2 transform -translate-x-1/2" />
+      <div className="bg-[#0E0E1A] rounded-[100%] flex justify-center items-center  z-9  w-70 h-70 absolute top-[30%] left-1/2 transform -translate-x-1/2">
+        <div className="w-[250px] h-[250px]  border-[#181828] flex items-center justify-center  animate-spin-slow">
+          <img
+            src={Sphere}
+            alt="Rotating Center"
+            className="w-[250px] h-[250px] object-cover rounded-full"
+          />
+        </div>
+      </div>
       <div className=" min-h-[350px] w-full flex gap-15 items-center justify-between">
         <GradientCardWrapper className="h-full w-full flex flex-col items-center justify-between rounded-2xl">
           <img
@@ -40,16 +44,9 @@ const Curved = () => {
           <div className="absolute bottom-24 left-0 right-0 z-20 flex items-center ">
             <div className="w-11 h-2 flex items-center justify-center  -mr-3 bg-black"></div>
             <div className="w-13 h-13 flex items-center justify-center rounded-full  bg-black p-1">
-              <img
-                src={branchButton}
-                alt="Branching Paths Button"
-              />
+              <img src={branchButton} alt="Branching Paths Button" />
             </div>
           </div>
-
-
-          
-
         </GradientCardWrapper>
         <GradientCardWrapper className="h-full w-full flex flex-col items-center justify-between rounded-2xl text-left">
           <img
@@ -67,14 +64,9 @@ const Curved = () => {
           <div className="absolute bottom-24 left-0 right-0 z-20 flex items-center ">
             <div className="w-11 h-2 flex items-center justify-center  -mr-3 bg-black"></div>
             <div className="w-13 h-13 flex items-center justify-center rounded-full  bg-black p-1">
-              <img
-                src={AiJourneyButton}
-                alt="Branching Paths Button"
-              />
+              <img src={AiJourneyButton} alt="Branching Paths Button" />
             </div>
           </div>
-
-          
         </GradientCardWrapper>
       </div>
     </div>
