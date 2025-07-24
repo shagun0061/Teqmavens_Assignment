@@ -26,7 +26,7 @@ const LeftPanel = ({ setIsModalOpen, setModalType }) => (
       <GradientCardWrapper
         onClick={() => {
           setIsModalOpen(true);
-          setModalType("slider");
+          setModalType("topUser");
         }}
         className="h-[200px] sm:w-64 w-full text-left hover:cursor-pointer hover:scale-105 transition-transform duration-300"
       >

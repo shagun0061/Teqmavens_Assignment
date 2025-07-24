@@ -29,20 +29,20 @@ const cards = [
   },
 ];
 
-const Slider = () => {
+const TopUserCarousel = () => {
   return (
     <div className="relative w-full flex justify-center items-center py-10">
       <Swiper
         centeredSlides={true}
         slidesPerView={"auto"}
         spaceBetween={200}
-        loop={false} // Loops the slides
-        effect="coverflow" // Add the coverflow effect
+        loop={false}
+        effect="coverflow"
         pagination={{
-          clickable: true, // Pagination dots to navigate
+          clickable: true,
         }}
-        navigation={true} // Enables prev/next navigation arrows
-        modules={[EffectCoverflow, Pagination, Navigation]} // Adding the necessary modules
+        navigation={true}
+        modules={[EffectCoverflow, Pagination, Navigation]}
         className="w-full swiper-custom"
       >
         {cards.map((card) => (
@@ -55,7 +55,6 @@ const Slider = () => {
               display: "flex",
             }}
           >
-            {/* Background image */}
             <img
               src={GredCard}
               alt="card background"
@@ -72,7 +71,6 @@ const Slider = () => {
               className="absolute left-0 object-cover rounded-[30px] z-0"
             />
 
-            {/* Foreground content */}
             <div className="relative z-10 flex flex-col items-center w-full h-full text-white hover:cursor-pointer">
               <p className="text-[40px] mt-10 font-bold text-transparent bg-clip-text bg-[linear-gradient(170deg,_#FFB266_0%,_#E9766F_49%,_#C04350_100%)] ">
                 {card.uses}
@@ -93,4 +91,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default TopUserCarousel;

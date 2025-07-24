@@ -1,13 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import CurvedLayout from "./components/CurvedLayout";
 import LeftPanel from "./components/LeftPanel";
 import RightPanel from "./components/RightPanel";
 import Modal from "./components/Modal";
-import Slider from "./components/Slider";
-import Carousel from "./components/Carousel";
-import TemplateAiComponent from "./components/TemplateAiComponent";
 import Curved from "./components/Curved";
+import GenerateCarousel from "./components/GenerateCarousel";
+import TopUserCarousel from "./components/TopUserCarousel";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,13 +17,12 @@ function App() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[30%_40%_30%] p-2 md:p-4 lg:p-5 pt-3">
       <LeftPanel setIsModalOpen={setIsModalOpen} setModalType={setModalType} />
-      {/* <CurvedLayout setIsModalOpen={setIsModalOpen} /> */}
       <Curved setIsModalOpen={setIsModalOpen} />
       <RightPanel />
 
       {isModalOpen && (
         <Modal isOpen={isModalOpen} onClose={closeModal}>
-          {modalType === "slider" ? <Slider /> : <Carousel />}
+          {modalType === "topUser" ? <TopUserCarousel /> : <GenerateCarousel />}
         </Modal>
       )}
     </div>

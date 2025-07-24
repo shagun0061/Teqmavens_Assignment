@@ -53,7 +53,7 @@ const Curved = () => {
           <img
             src={AiJourneyLine}
             alt="AI Journey Line"
-            className="absolute top-0 -right-2 z-10 w-36 h-44 sm:w-36 sm:h-44"
+            className="absolute top-0 -right-2 md:-right-9 z-10 w-36 h-44 sm:w-36 sm:h-44"
           />
           <div className="relative z-20 p-2 flex flex-col items-start justify-end h-full pb-0">
             <h4 className="font-semibold text-lg sm:text-sm md:text:sm xl:text-sm mb-1">
