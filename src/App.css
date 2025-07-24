@@ -150,3 +150,31 @@
   width: 8px;
   height: 8px;
 }
+
+@keyframes activeSlideLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+}
+@keyframes activeSlideRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+}
+
+.active-slide-left {
+  animation: activeSlideLeft 1.2s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+}
+.active-slide-right {
+  animation: activeSlideRight 1.2s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+}

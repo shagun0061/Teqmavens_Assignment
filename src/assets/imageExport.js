@@ -21,6 +21,10 @@ import Avatar1 from "./circle (1).png";
 import Avatar2 from "./circle (2).png";
 import branchButton from "./branchButton.svg";
 import BlurCard from "./blurFram.png";
+import carouselAvtar1 from "./avatar-1.png";
+import carouselAvtar2 from "./avatar-2.jpg";
+
+import carouselAvtar3 from "./avatar-3.png";
 
 export {
   Logo,
@@ -46,4 +50,7 @@ export {
   Avatar,
   branchButton,
   BlurCard,
+  carouselAvtar1,
+  carouselAvtar2,
+  carouselAvtar3,
 };

@@ -1,17 +1,26 @@
 import { GiftButton } from "../assets/imageExport";
 
-const TempCard = ({ icon, title, subtitle }) => {
+const TempCard = ({ icon, title, subtitle, img }) => {
   return (
     <div className="relative w-[380px] h-[300px] rounded-2xl bg-gradient-to-br from-[#7B5FFF] to-[#5737D6] shadow-xl flex flex-col p-6">
       {/* Icon in circle */}
-      <div className="absolute top-8 left-6 w-15 h-15  flex items-center justify-center ">
+      <div className="absolute top-8 left-6 w-15 h-15 flex items-center justify-center ">
         <img
           src={icon || GiftButton}
           alt="Card Icon"
           className="w-10 h-10 object-contain"
         />
       </div>
-      <div className="mx-auto mt-2 mb-6 w-16 h-16 bg-gray-200 rounded-sm" />
+      {/* Main card image */}
+      {img ? (
+        <img
+          src={img}
+          alt="Card Visual"
+          className="mx-auto mt-2 mb-6 w-16 h-16 object-cover rounded-sm"
+        />
+      ) : (
+        <div className="mx-auto mt-2 mb-6 w-16 h-16 bg-gray-200 rounded-sm" />
+      )}
       {/* Title */}
       <div className="flex-1 flex flex-col justify-center items-start">
         <h2
